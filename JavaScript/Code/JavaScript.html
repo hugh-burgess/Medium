@@ -16,7 +16,6 @@
 
 header {
   display: flex;
-  grid-area:header;
   background-color: rgba(238, 239, 243, 0.4);
   text-align: center;
   flex-direction: column;
@@ -58,7 +57,7 @@ p, h2, h4 {
   .escseq {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     width: 262px;
     height: 379px;
     background-color: rgba(238, 239, 243, 0.5);
@@ -268,32 +267,7 @@ p, h2, h4 {
     }
   }
 
-  .pfade1 {
-    margin: auto;
-    animation: fade 2s 2s forwards;
-    -webkit-animation: fade 2s 2s forwards;
 
-  }
-
- @keyframes fade {
-    from {
-      opacity: 0;
-    }
-
-     to {
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0;
-    }
-
-     to {
-      opacity: 1;
-    }
-  }
   /* Nav Bar */
 
 
@@ -302,22 +276,50 @@ p, h2, h4 {
     background-color: #333;
     display: relative;
     z-index: 99;
-
   }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
-    display: none;
-    align-items: center;
-    position: fixed;
-    right: 0;
-    z-index: 10000;
+      position: fixed;
+      top: 30;
+      right: 0;
+      width: 280px;
+      perspective: 10px;
+      z-index:1000;
+      display: none;
+      animation: growDown 300ms ease-in-out forwards;
+      -webkit-animation: growDown 300ms ease-in-out forwards;
+      transform-origin: top center;
 
   }
 
+ @keyframes growDown {
+   0% {
+     transform: scaleY(0)
+   }
+     80% {
+     transform: scaleY(1.1)
+   }
+     100% {
+     transform: scaleY(1)
+   }
+ }
+
+ @-webkit-keyframes growDown {
+   0% {
+     transform: scaleY(0)
+   }
+     80% {
+     transform: scaleY(1.1)
+   }
+     100% {
+     transform: scaleY(1)
+   }
+ }
+
   /* Style navigation menu links */
   .topnav a {
-    color: grey;
+    color: white;
     background-color: black;
     padding: 14px 16px;
     text-decoration: none;
@@ -363,6 +365,7 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
 </script>
 
 <!-- End of Nav Bar -->
@@ -378,6 +381,7 @@ function myFunction() {
 
   <div class="topnav">
     <div id="myLinks">
+      <a class="nav-link" href="#home">Back to Top</a>
       <a class="nav-link" href="#day36">Day 36 — Basic JavaScript Part 1</a>
       <a class="nav-link" href="#day37">Day 37 — Basic JavaScript Part 2</a>
       <a class="nav-link" href="#day38">Day 38 — Basic JavaScript Part 3</a>
@@ -385,12 +389,11 @@ function myFunction() {
       <a class="nav-link" href="#day40">Day 40 — Basic JavaScript Part 5</a>
       <a class="nav-link" href="#day41">Day 41 — Basic JavaScript Part 6</a>
       <a class="nav-link" href="#day42">Day 42 — Basic JavaScript Part 7</a>
-    </nav>
     </div>
+
     <div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
+      <i class="fa fa-bars"></i> </a>
   </div>
   </header>
 
@@ -399,7 +402,7 @@ function myFunction() {
 
 <section>
 <div>
-  <header class="headerfade">
+  <header class="headerfade" id="home">
     <h1>Learning to Code: JavaScript</h1>
     </header>
 </div>
