@@ -198,6 +198,42 @@ p, h2, h4 {
     opacity: 0;
   }
 
+  .addSum {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      width: 689px;
+      height: 177px;
+      background-color: rgba(238, 239, 243, 0.5);
+      padding: 0px;
+      margin: 30px;
+      opacity: 0;
+    }
+
+    .processArg {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      width: 359px;
+      height: 311px;
+      background-color: rgba(238, 239, 243, 0.5);
+      padding: 0px;
+      margin: 30px;
+      opacity: 0;
+    }
+
+    .nextInLine {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      width: 383px;
+      height: 671px;
+      background-color: rgba(238, 239, 243, 0.5);
+      padding: 0px;
+      margin: 30px;
+      opacity: 0;
+    }
+
 <!-- End of Images -->
 
   h4 {
@@ -389,6 +425,8 @@ function myFunction() {
       <a class="nav-link" href="#day40">Day 40 — Basic JavaScript Part 5</a>
       <a class="nav-link" href="#day41">Day 41 — Basic JavaScript Part 6</a>
       <a class="nav-link" href="#day42">Day 42 — Basic JavaScript Part 7</a>
+      <a class="nav-link" href="#day43">Day 43 — Basic JavaScript Part 8</a>
+
     </div>
 
     <div>
@@ -981,6 +1019,74 @@ It’s strongly recommended that you practise writing variables in JS with camel
 </div>
 </section>
 <br/><br/>
+<section>
+  <div>
+    <h2 class="pfade" id="day43">Day 43 — Basic JavaScript Part 8</h2>
+</div>
+<br/>
+<div>
+<p class="pfade">Hello everyone! I’m currently away for Christmas, but I didn't want to leave you all out, so I brought my Mac with me to do a little more JavaScript with you all. Cheers to FreeCodeCamp for the lessons. Are you sitting comfortably with your thinking cogs switched on? Then let’s jump right back into it all..</p>
+</div>
+<br/>
+<div>
+<h4 class="pfade">Understanding the Undefined Value when returned from a Function</h4>
+<p class="pfade">Functions can include return statements but they don’t have to. By doing so, the code runs but returns as undefined.</p>
+</div>
+<br/>
+<div>
+<img class="pfade box addSum" src="https://miro.medium.com/max/689/1*DSrKITEjwfgxblCwnCspdA.png" alt="diagram of addSum">
+</div>
+<br/>
+<div>
+<p class="pfade">As you can see here the function addSum has no return statement underneath so the global sum (outside the function’s parameters) will be changed but the returned value of the function is undefined.</p>
+</div>
+<br/>
+<div>
+<h4 class="pfade">Assignment with a Returned Value</h4>
+<p class="pfade">Using the assignment operator (=), we can store values. Therefore with this same thinking we can take a returned value and assign it to a variable.</p>
+</div>
+<br/>
+<div>
+<img class="pfade box processArg" src="https://miro.medium.com/max/359/1*d1MfP8DmidGs8agaCG4GXA.png" alt="diagram of processArg">
+</div>
+<br/>
+<div>
+<p class="pfade">Here we have the variable processed to have the predefined value of 0 (line 2), and then we create the function processArg with a return statement which takes the argument num and adds 3, then divides that total by 5 (line 4 and 5). As we can see on line 10, the function processArg is then called with it’s argument assigned a value of 7, and the returned value is assigned to the variable processed.</p>
+</div>
+<br/>
+<div>
+<h4 class="pfade">Queues</h4>
+<p class="pfade">In Data Science (phoah we’re totally learning that! how exciting) a queue is an abstruct structure where items are kept in order. I don’t know about you but that’s right up my alley, thanks OCD. New items can be added to the back of the queue and old items are removed from the front of the queue. So, a queue works based on a first-in first-out (FIFO) principle.</p>
+</div>
+<br/>
+<div>
+<p class="pfade">According to javascripttutorial.net :</p>
+<p class="pfade box">The insertion operation is called enqueue, and the removal operation is called dequeue. The enqueue operation inserts an element at the end of the queue, whereas the dequeue operation removes an element from the front of a queue.</p>
+</div>
+<br/>
+<div>
+<p class="pfade">Think of people standing in a line, the first is served and leaves, and another person stands at the back.</p>
+<br/>
+<p class="pfade">Remember: the push() method adds elements to the end of an array and the shift() method removes the first element of the array and returns it as well.</p>
+</div>
+<br/>
+<div>
+<img class="pfade box nextInLine" src="https://miro.medium.com/max/383/1*8DXzAqE8qN4CuOJCF2hOfQ.png" alt="diagram of nextInLine">
+</div>
+<br/>
+<div>
+<p class="pfade">I needed a bit of help with this but I think I have this resolved. Above is the excerise I had to solve in FreeCodeCamp. We’re going to ignore the lines from 16–19 for now.</p>
+</div>
+<br/>
+<div>
+<p class="pfade">On line 1, we define the function nextInLine with an array (arr) and a number (item) as arguments. You can see on line 3 and 4 that we’re taking the variable testArr and using the push() function to add an item onto the end of the array (the array can be seen in line 14), and the shift() function to remove the first value of the array. Remember the first value of an array is in position “0". Then on line 7 we are asking to return the array removed and the number added.</p>
+</div>
+<br/>
+<div>
+<p class="pfade">Aaaand let’s keep it short today, I’ll see you all later and Merry Christmas!</p>
+</div>
+<br/><br/>
+</section>
 
 </body>
 
