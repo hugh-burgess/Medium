@@ -234,6 +234,78 @@ p, h2, h4 {
       opacity: 0;
     }
 
+    .iftest {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      width: 423px;
+      height: 93px;
+      background-color: rgba(238, 239, 243, 0.5);
+      padding: 0px;
+      margin: 30px;
+      opacity: 0;
+    }
+
+    .myCondition {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      width: 422px;
+      height: 255px;
+      background-color: rgba(238, 239, 243, 0.5);
+      padding: 0px;
+      margin: 30px;
+      opacity: 0;
+    }
+
+    .myVal {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      width: 420px;
+      height: 203px;
+      background-color: rgba(238, 239, 243, 0.5);
+      padding: 0px;
+      margin: 30px;
+      opacity: 0;
+    }
+
+    .biggie {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      width: 429px;
+      height: 157px;
+      background-color: rgba(238, 239, 243, 0.5);
+      padding: 0px;
+      margin: 30px;
+      opacity: 0;
+    }
+
+    .plain {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      width: 221px;
+      height: 87px;
+      background-color: rgba(238, 239, 243, 0.5);
+      padding: 0px;
+      margin: 30px;
+      opacity: 0;
+    }
+
+    .typeOf {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      width: 421px;
+      height: 95px;
+      background-color: rgba(238, 239, 243, 0.5);
+      padding: 0px;
+      margin: 30px;
+      opacity: 0;
+    }
+
 <!-- End of Images -->
 
   h4 {
@@ -426,6 +498,7 @@ function myFunction() {
       <a class="nav-link" href="#day41">Day 41 — Basic JavaScript Part 6</a>
       <a class="nav-link" href="#day42">Day 42 — Basic JavaScript Part 7</a>
       <a class="nav-link" href="#day43">Day 43 — Basic JavaScript Part 8</a>
+      <a class="nav-link" href="#day44">Day 44 — Basic JavaScript Part 9</a>
 
     </div>
 
@@ -1085,8 +1158,86 @@ It’s strongly recommended that you practise writing variables in JS with camel
 <div>
 <p class="pfade">Aaaand let’s keep it short today, I’ll see you all later and Merry Christmas!</p>
 </div>
-<br/><br/>
 </section>
+<br/><br/>
+
+<section>
+  <div>
+    <h2 class="pfade" id="day44">Day 44 — Basic JavaScript Part 9</h2>
+</div>
+<br/>
+<div>
+<p class="pfade">Hello everyone! Hope you all had a great new year, it’s been a while since I had my head in the JavaScript mindset, last time we left off at queues, so let’s pick up from there, starting with Booleans.. Thanks as always to FreeCodeCamp for the lessons.</p>
+</div>
+<br/>
+<div>
+<h4 class="pfade">Boolean Values</h4>
+<p class="pfade">So what are Booleans? They are data types which have only one of two possible values: true or false. Imagine them like little “switches” where True is “on” and False is “off”.</p>
+<p class="pfade">Note: The above quotes used are not included when writing true or false in JavaScript, as they are not Strings.</p>
+</div>
+<br/>
+<div>
+<h4 class="pfade">Conditional Logic with If Statements</h4>
+<p class="pfade">When you are writing code, the layout and execution is very logical. What works for what and how does this affect that. As a web developer you would need to think out the steps to execute an action and so on. Here we are getting into just that.</p>
+<p class="pfade">An If statement are used when we need to make decisions when writing code. It tells JS to execute the code in the curly brackets {} if the conditions in the parenthesis () are met. These conditions are Boolean conditions as we saw above, and may only be true or false. For example:</p>
+</div>
+<br/>
+<div>
+<img class="pfade box iftest" src="https://miro.medium.com/max/423/1*qlOb2CRCfpkITfANWkX-lg.png" alt="diagram of iftest">
+</div>
+<br/>
+<div>
+<p class="pfade">When writing an If statement with Boolean conditions that may also not be met, we need to write the return statement for which it would result as false. This is like saying “If … then return true, otherwise return false”.</p>
+</div>
+<br/>
+<div>
+<img class="pfade box myCondition" src="https://miro.medium.com/max/422/1*zw3xvGZ6bf_djBHlZbP3sA.png" alt="diagram of myCondition">
+</div>
+<br/>
+<div>
+<p class="pfade">Remember: As you can see in the above example, the Boolean condition myCondition is a very simple condition, and could be far more complex later on, but for now we are starting out very simple. Also note the positioning of the return false statement inside the curly brackets of the function but outside of the if statement curly brackets.</p>
+</div>
+<br/>
+<div>
+<h4 class="pfade">Comparison with the Equality Operator</h4>
+<p class="pfade">All comparison operators in JS return a value of either true or false. The most basic equality operator being “==”. It compares two values and returns true if they are equal or false if otherwise.</p>
+</div>
+<br/>
+<div>
+<img class="pfade box myVal" src="https://miro.medium.com/max/420/1*5OfB1_TCB2L1GBRagcn9Ww.png" alt="diagram of myVal">
+</div>
+<br/>
+<div>
+<p class="pfade">Here, we can see many similarities to the above chapter example, except now our Boolean condition includes an equality operator, so as to say “if this equals that, then..”, in this case, if the Boolean condition myVal is equal to 10.</p>
+<p class="pfade">Note: Listen up, this is a biggie: In order for JS to compare to differing data types such as strings and numbers, it must convert one to another, also known as “Type Coercion”. This goes as follows:</p>
+</div>
+<br/>
+<div>
+<img class="pfade box biggie" src="https://miro.medium.com/max/429/1*Nyu-XHJwYnQx0QuOvPJorA.png" alt="diagram of biggie">
+</div>
+<br/>
+<div>
+<h4 class="pfade">The Strict Equality Operator</h4>
+<p class="pfade">Let’s take this one step further and look at the strict equality operator, written as “===”. It is a counterpart to the equality operator, and does not perform a type conversion.</p>
+<p class="pfade">Where the equality operator would say that one data type can be compared to another, that this equals that, the strict equality operator says that only this equals this and not that.</p>
+<p class="pfade">Yes, I didn’t make that very clear - in plain English, it is saying that the differing data types are unequal and will return false.</p>
+</div>
+<br/>
+<div>
+<img class="pfade box plain" src="https://miro.medium.com/max/221/1*J4KqvUmxPCcVJ1pvKu35YQ.png" alt="diagram of plain">
+</div>
+<br/>
+<div>
+<p class="pfade">Remember: In summary, the equality operator “==” performs a type conversion between differing data types and evaluates the values. The strict equality operator “===” looks at the differing data types as they are, and type conversion is not performed.</p>
+<p class="pfade">Note: You can use the typeof operator to define a variable or value by it’s data type category.</p>
+</div>
+<br/>
+<div>
+<img class="pfade box typeOf" src="https://miro.medium.com/max/421/1*1WWiZ74Siq6N3EwvYTzTNw.png" alt="diagram of typeOf">
+<p class="pfade">Aaaaand let’s leave it there for today before we really start to get into the thick of these operators, we’ll dig into them more next time. Til then!</p>
+</div>
+</section>
+<br/><br/>
 
 </body>
 
